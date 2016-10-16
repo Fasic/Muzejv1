@@ -19,4 +19,8 @@
     <dimen name="zastava_visina">108dp</dimen>
 
     <dimen name="qrCRop">405dp</dimen>
+
+    <dimen name="naslov_font">68dp</dimen>
+    <dimen name="qr_sirina">270dp</dimen>
+    <dimen name="qr_visina">162dp</dimen>
 </resources>

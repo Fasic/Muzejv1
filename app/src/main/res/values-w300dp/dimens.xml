@@ -20,4 +20,8 @@
 
     <dimen name="qrCRop">150dp</dimen>
 
+    <dimen name="naslov_font">25dp</dimen>
+    <dimen name="qr_sirina">100dp</dimen>
+    <dimen name="qr_visina">60dp</dimen>
+
 </resources>

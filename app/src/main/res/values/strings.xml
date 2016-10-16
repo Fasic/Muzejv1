@@ -37,4 +37,6 @@ Muzej se bavi i izdavačkom delatnošću – katalozi zbirki i izložbi, monogra
     <string name="kucaMiloevic">Okućnica Ilije Miloševića</string>
     <string name="lokacijaKuce">Lokacija okućnice Ilije Miloševića:</string>
     <string name="no_network">Nema interneta</string>
+    <string name="naslov">Narodni muzej u \nAranđelovcu</string>
+    <string name="qr_kod">Skeniraj\nQR kod</string>
 </resources>

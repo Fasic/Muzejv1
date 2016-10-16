@@ -33,4 +33,6 @@
     <string name="kucaMiloevic">Land Ilija Milosevic</string>
     <string name="lokacijaKuce">Location Ilija Milosevic house:</string>
     <string name="no_network">No internet connection</string>
+    <string name="naslov">National Museum \nArandjelovac</string>
+    <string name="qr_kod">Scan QR\ncodes</string>
 </resources>

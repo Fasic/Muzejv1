@@ -11,6 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -19,8 +20,8 @@ import java.util.Locale;
 public class MainActivity extends Activity {
     Button srb;
     Button eng;
-    Button qr;
-    Button info;
+    LinearLayout qr;
+    ImageView info;
     String jezik = "sr";
     public static final String PREFS_NAME = "Fasic";
 
@@ -39,8 +40,8 @@ public class MainActivity extends Activity {
         eng = (Button) findViewById(R.id.engleska);
 
 
-        qr =  (Button) findViewById(R.id.qrButton);
-        info =  (Button) findViewById(R.id.infoButton);
+        qr =  (LinearLayout) findViewById(R.id.qr);
+        info =  (ImageView) findViewById(R.id.info);
 
 
         if(jezik.equals("en")){
@@ -85,6 +86,7 @@ public class MainActivity extends Activity {
             }
         });
 
+
         ImageView logo = (ImageView) findViewById(R.id.logo);
         logo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,10 +123,9 @@ public class MainActivity extends Activity {
         Typeface font = Typeface.createFromAsset(getAssets(),  getResources().getString(R.string.font));
         font.isBold();
 
-        TextView naslovTB = (TextView) findViewById(R.id.naslov);
-
-        info.setTypeface(font);
-        qr.setTypeface(font);
+        TextView naslovTB = (TextView) findViewById(R.id.textView);
+        naslovTB.setTypeface(font);
+        naslovTB = (TextView) findViewById(R.id.textView2);
         naslovTB.setTypeface(font);
     }
 
@@ -145,8 +146,12 @@ public class MainActivity extends Activity {
         config.locale = locale;
         getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
 
-        TextView naslovTB = (TextView) findViewById(R.id.naslov);
-        naslovTB.setText(getResources().getString(R.string.app_name));
+
+
+        TextView naslovTB = (TextView) findViewById(R.id.textView);
+        naslovTB.setText(getResources().getString(R.string.naslov));
+        naslovTB = (TextView) findViewById(R.id.textView2);
+        naslovTB.setText(getResources().getString(R.string.qr_kod));
     }
 
 }
