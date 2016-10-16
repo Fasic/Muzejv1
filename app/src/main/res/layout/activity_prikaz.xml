@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fasic.fasic.muzej.Prikaz"
+    android:background="#ffedf2ff">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="#d0d0d0"
+        android:id="@+id/linearLayout5"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/header_logo"
+            android:layout_height="@dimen/header_logo"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/header_logo_margine"
+            android:layout_marginBottom="@dimen/header_logo_margine"
+            android:layout_marginLeft="@dimen/header_logo_margine"
+            android:layout_gravity="left|center"
+            android:clickable="true"
+            android:id="@+id/logo" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="@dimen/header_play"
+                android:layout_height="fill_parent"
+                android:id="@+id/playID"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/header_logo_margine"
+                android:layout_marginRight="@dimen/header_logo_margine"
+                android:layout_marginBottom="@dimen/header_logo_margine"
+                android:src="@drawable/play"
+                android:scaleType="fitCenter"
+                android:paddingTop="@dimen/prikaz_tb_margina"
+                android:paddingBottom="@dimen/prikaz_tb_margina"
+                android:layout_gravity="right|center_vertical"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout5">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/naslovID"
+                android:textSize="@dimen/prikaz_naslov"
+                android:textIsSelectable="true"
+                android:text=""
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/prikaz_tb_margina"
+                android:layout_marginRight="@dimen/prikaz_lr_margina"
+                android:layout_marginLeft="@dimen/prikaz_lr_margina" />
+
+            <FrameLayout
+                android:id="@+id/frameID"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/naslovID"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/slikaID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="@dimen/prikaz_lr_margina"
+                    android:layout_marginRight="@dimen/prikaz_lr_margina"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/prikaz_tb_margina"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtID"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/prikaz_lr_margina"
+                android:layout_marginRight="@dimen/prikaz_lr_margina"
+                android:textSize="@dimen/prikaz_txt"
+                android:layout_below="@+id/frameID"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

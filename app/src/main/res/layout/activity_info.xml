@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.fasic.fasic.muzej.info">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="#d0d0d0"
+
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/header_logo"
+            android:layout_height="@dimen/header_logo"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/header_logo_margine"
+            android:layout_marginBottom="@dimen/header_logo_margine"
+            android:layout_marginLeft="@dimen/header_logo_margine"
+            android:layout_gravity="left|center"
+            android:clickable="true"
+            android:id="@+id/logoID" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/header_logo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info"
+                android:id="@+id/headerID"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/prikaz_tb_margina"
+                android:textSize="@dimen/header_font"
+                android:textAlignment="center" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dugme"
+        android:id="@+id/dugme1ID"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="left|center"
+            android:src="@drawable/muzej"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oMuzeju"
+            android:id="@+id/oMuzejuID"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:textSize="@dimen/button_font" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dugme"
+        android:id="@+id/dugme2ID"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:layout_below="@+id/dugme1ID"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="left|center"
+            android:src="@drawable/cave"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oPecini"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:textSize="@dimen/button_font"
+            android:id="@+id/oRisovaci" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dugme"
+        android:id="@+id/dugme3ID"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:layout_below="@+id/dugme2ID"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="left|center"
+            android:src="@drawable/orasac"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oOrascu"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:textSize="@dimen/button_font"
+            android:id="@+id/oOrascu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dugme"
+        android:id="@+id/dugme4ID"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:layout_below="@+id/dugme3ID"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="left|center"
+            android:src="@drawable/okuci"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oKuci"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:textSize="@dimen/button_font"
+            android:id="@+id/orasac" />
+    </LinearLayout>
+</RelativeLayout>

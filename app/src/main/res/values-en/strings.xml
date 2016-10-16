@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Museum</string>
+    <string name="skeniranjeTxt">Scanning</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_prikaz">Prikaz</string>
+    <string name="title_activity_capture">CaptureActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="backDugme">Back</string>
+    <string name="qrDugme">QR</string>
+    <string name="infoDugme">info</string>
+    <string name="title_activity_info">info</string>
+    <string name="oMuzeju">Museum</string>
+    <string name="oPecini">Cave Risovaca</string>
+    <string name="opis1Omuzeju">The National Museum of Arandjelovac founded in 1981 and housed in a purpose-built building whose architecture relies on the traditions architecture of Šumadija (designer F. Bajlon). Its core activity is the research, study, preservation and presentation of movable cultural property The National Museum of Arandjelovac implemented in the territory of the two municipalities of Topola and Arandjelovac. In conceptual terms, is to protect the institution of complex type with collections in the field of paleontology, archeology, ethnology, history, art history and numismatics. Professional work is organized by departments for each area of research and protection. Within the museum works and the Department of Conservation and Restoration. </string>
+    <string name="opis2Omuzeju">National Museum in Arandjelovac, as a control, entrusted guardianship protected area ”Cave Risovaca”. As an important archeological site Paleolithic age Risovaca was declared cultural heritage of great importance, and because natural resources - natural resource of great importance (natural monument category). Decorated on all principles of modern presentation, annually receives more than 20,000 visitors. Also, in the jurisdiction of the museum includes Land of Ilija Milosevic.\nEducational work of the Museum is one of the important segments of the labor curators and museum guides. Special attention is paid to educational workshops for preschool, elementary and secondary school age. In addition, workshops are organized for adults, lectures, promotions museum publications.\nThe museum specializes in publishing - catalogs of collections and exhibitions, monographs, guides and Museum Risovača cave and other publications; 2003 launched the Proceedings of the Museum “Sumadijski zapisi”.\n</string>
+    <string name="title_activity_o_aktivnost">oAktivnost</string>
+    <string name="lokacijaMuzej">Location of the Museum</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="narodniMuzej">National Museum Arandjelovac</string>
+    <string name="oOrascu">Orasac</string>
+    <string name="oKuci">Land Ilija Milosevic</string>
+    <string name="opis1Opecini">Risovaca cave is located on the south-eastern outskirts of Arandjelovac, at the foot of the hill on the right bank of the river Kubrsnica. It was discovered quite by accident, in the middle of the last century, in the exploitation of stone in Risovacki hill. Archaeological research Risovaca cave represent the beginning of the study of Paleolithic culture in the territory of Serbia. The sediments were discovered Risovace stone and bone tools, traces the life of a human species that disappeared in the Middle Paleolithic developed Mousterian culture (Homo sapiens neanderthalensis). Neanderthals used Risovac as their refuge in a time of pre 50,000 to 35,000 years ago.</string>
+    <string name="opis2Opecini">As an important archaeological site Paleolithic age Risovaca was declared cultural heritage of great importance (1983). Due to the natural features of the cave and the surrounding area of about 13 ha are protected as a natural resource of great importance, ie. Natural Monument category I (1995). A protected area \"Cave Risovaca\" old, as a control, the National Museum in Arandjelovac through activities on the preservation, conservation, presentation and popularization of the natural and cultural rarities.</string>
+    <string name="opis1Oorascu">Maricevica gully significant, according to legend, a place of agreement on the outbreak of the First Serbian Uprising, selection  of Karadjordje as leader and the beginning of the insurgent campaign burning Turkish han in Orasac in 1804. In memory of the events related to the outbreak of the uprising, in Orasac, the church was built between 1868 and 1870, the memorial school was built in 1932, the memorial fountain in the ravine marking the hundred and fifty anniversary, 1954, and 2004, to celebrate the two hundred years since the beginning of the uprising, erected a monument to Karadjordje, sculptor Drinke Radovanovic.</string>
+    <string name="opis2Oorascu">Within the complex is the tomb of Teodosije Maricevica, celebrities from the time of the outbreak of the uprising, which was moved in 1955 from the original town in the churchyard. Conservation and restoration works on the memorial school were carried out in 1998, 2003 and 2006.</string>
+    <string name="opis1Okuci">Land Ilija Milosevic is located at the entrance in Arandjelovac, from the direction of Topola, across the cave Risovaca. This garden was probably formed Sreten Milosevic, grandfather of the last owner, Ilija Milosevic. The spacious yard is preserved original seven buildings: old house, recent house, an outbuilding, a dairy, a storeroom, a basket and a well. Land Milosevic is a typical village whole of the nineteenth and early twentieth century rounded associated facilities. As such, Land Ilija Milosevic was declared a cultural monument in 1992, and since 2007 given on the aging of the National Museum in Arandjelovac.</string>
+    <string name="opis2Okuci">It stands with approximately the same facilities that were there since its establishment. The old house, an outbuilding, a dairy, a storeroom, a new house - all these are objects that have a monumental characteristics, a whole complex of garden represents a significant monument of national architecture Sumadija of XIX century. Because of the conservation and restoration works Land is not permanently open to visitors. The objects are organized occasional ethnographic exhibitions, children\'s workshops and other events.</string>
+    <string name="risovackaPecina">Risovaca cave</string>
+    <string name="LokacijaPecine">Cave location:</string>
+    <string name="orasacJaruga">Orasac Maricevica Gully</string>
+    <string name="lokacijaOrasac">Location of Orasac, Maricevica Gully:</string>
+    <string name="kucaMiloevic">Land Ilija Milosevic</string>
+    <string name="lokacijaKuce">Location Ilija Milosevic house:</string>
+    <string name="no_network">No internet connection</string>
+</resources>

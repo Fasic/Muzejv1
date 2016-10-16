@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_height">108.0dp</dimen>
+    <dimen name="header_logo">96.0dp</dimen>
+    <dimen name="header_play">84.0dp</dimen>
+    <dimen name="header_logo_margine">6.0dp</dimen>
+
+    <dimen name="header_font">42.0dp</dimen>
+    <dimen name="button_font">36.0dp</dimen>
+
+    <dimen name="prikaz_naslov">48.0dp</dimen>
+    <dimen name="prikaz_txt">21.599999999999998dp</dimen>
+    <dimen name="prikaz_lr_margina">24.0dp</dimen>
+    <dimen name="prikaz_tb_margina">12.0dp</dimen>
+
+    <dimen name="qr_info">150dp</dimen>
+    <dimen name="qr_info_font">30dp</dimen>
+    <dimen name="zastava_sirina">180dp</dimen>
+    <dimen name="zastava_visina">108dp</dimen>
+
+    <dimen name="qrCRop">360dp</dimen>
+</resources>

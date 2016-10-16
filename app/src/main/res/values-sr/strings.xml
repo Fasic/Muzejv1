@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Muzej</string>
+    <string name="skeniranjeTxt">Skeniranje</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_prikaz">Prikaz</string>
+    <string name="title_activity_capture">CaptureActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="backDugme">Nazad</string>
+    <string name="qrDugme">QR</string>
+    <string name="infoDugme">info</string>
+    <string name="title_activity_info">info</string>
+    <string name="oMuzeju">O muzeju</string>
+    <string name="oPecini">Pećina Risovača</string>
+    <string name="opis1Omuzeju">Narodni muzej u Aranđelovcu osnovan je 1981. godine i smešten u namenski građeno zdanje čija se arhitektura oslanja na tradicije narodnog graditeljstva Šumadije (projektant F. Bajlon). Svoju osnovnu delatnost istraživanja, proučavanja, zaštite i prezentacije pokretnih kulturnih dobara Narodni muzej u Aranđelovcu realizuje na teritoriji dveju opština, Topole i Aranđelovca. U koncepcijskom smislu, predstavlja ustanovu zaštite kompleksnog tipa sa zbirkama iz oblasti paleontologije, arheologije, etnologije, istorije, istorije umetnosti i numizmatike. Stručni rad je organizovan po službama, za svaku oblast istraživanja i zaštite. U okviru Muzeja radi i Odeljenje za konzervaciju i restauraciju.</string>
+    <string name="opis2Omuzeju">Narodnom muzeju u Aranđelovcu je, kao upravljaču, povereno na staranje Zaštićeno područje \”Pećina Risovača\”. Kao značajno arheološko nalazište paleolitske starosti Risovača je proglašena kulturnim dobrom od velikog značaja, a zbog prirodnih vrednosti - prirodnim dobrom od izuzetnog značaja (spomenik prirode I kategorije). Uređena po svim principima savremene prezentacije, godišnje primi preko 20.000 posetilaca. Takođe, u nadležnost Muzeja spada i Okućnica Ilije Miloševića.
+Pedagoški rad Muzeja jedan je od značajnih segmenata rada kustosa i muzejskih vodiča. Posebna pažnja se poklanja edukativnim radionicama za decu predškolskog, osnovnoškolskog i srednjoškolskog uzrasta. Pored toga, organizuju se i radionice za odrasle, predavanja, promocije muzejskih izdanja.
+Muzej se bavi i izdavačkom delatnošću – katalozi zbirki i izložbi, monografije, vodiči za Muzej i Risovačku pećinu i druge publikacije; 2003. pokrenut je Zbornik radova Muzeja \”Šumadijski zapisi\”.</string>
+    <string name="title_activity_o_aktivnost">oAktivnost</string>
+    <string name="lokacijaMuzej">Lokacija Muzeja</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="narodniMuzej">Narodni Muzej Aranđelovac</string>
+    <string name="oOrascu">Orašac</string>
+    <string name="oKuci">Okućnica Ilije Miloševića</string>
+    <string name="opis1Opecini">Pećina Risovača se nalazi na jugo-istočnoj periferiji Aranđelovca, u podnožju istoimenog brda na desnoj obali rečice Kubršnice. Otkrivena je sasvim slučajno, sredinom prošlog veka, prilikom eksploatacije kamena u Risovačkom brdu. Arheološka istraživanja Risovačke pećine predstavljaju početak izučavanja paleolitskih kultura na tlu Srbije. U sedimentima Risovače otkrivene su kamene i koštane alatke, tragovi života jedne iščezle ljudske vrste koja je u srednjem paleolitu razvila musterijensku kulturu (Homo sapiens neanderthalensis). Neandertalci su koristili Risovaču kao svoje sklonište u vremenu od pre 50.000 do pre 35.000 godina. \"</string>
+    <string name="opis2Opecini">Kao važno arheološko nalazište paleolitske starosti Risovača je proglašena kulturnim dobrom od velikog značaja (1983). Zbog prirodnih osobenosti pećina i okolni prostor od oko 13 ha zaštićeni su kao prirodno dobro od izuzetnog značaja, tj. spomenik prirode I kategorije (1995). O zaštićenom području „Pećina Risovača\" stara se, kao upravljač, Narodni muzej u Aranđelovcu kroz aktivnosti na očuvanju, zaštiti, prezentaciji i popularizaciji ove prirodne i kulturne retkosti.</string>
+    <string name="opis1Oorascu">Marićevića jaruga značajna je, po predanju, kao mesto dogovora o izbijanju Prvog srpskog ustanka, izboru Karađorđa za njegovog vođu i početku ustaničkih akcija paljenjem turskog hana u Orašcu 1804. godine. U znak sećanja na događaje vezane za izbijanje ustanka, u Orašcu je podignuta crkva između 1868. i 1870, spomen-škola sagrađena je 1932, spomen-česma u samoj Jaruzi povodom obeležavanja stopedesetogodišnjeg jubileja, 1954, a 2004. godine, povodom proslave dvesta godina od početka ustanka, postavljen je i spomenik Karađorđu, rad vajara Drinke Radovanović. \"</string>
+    <string name="opis2Oorascu">U sklopu kompleksa je grob Teodosija Marićevića, poznate ličnosti iz vremena izbijanja ustanka, koji je dislociran 1955. godine sa prvobitnog mesta u porti crkve. Konzervatorsko-restauratorski radovi na spomen-školi su izvođeni 1998, 2003. i 2006. godine.</string>
+    <string name="opis1Okuci">Okućnica Ilije Miloševića nalazi se na ulazu u Aranđelovac, iz pravca Topole, preko puta pećine Risovače. Ovu okućnicu najverovatnije je formirao Sreten Milošević, pradeda poslednjeg vlasnika, Ilije Miloševića. U prostranom dvorištu sačuvano je sedam objekata prvobitne okućnice: stara kuća, novija kuća, vajat, mlekar, magaza, koš i bunar. Okućnica Miloševića predstavlja tipičnu seosku celinu iz XIX i početka XX veka zaokruženu pripadajućim objektima. Kao takva, Okućnica Ilije Miloševića proglašena je spomenikom kulture 1992. godine, a od 2007. data je na staranje Narodnom muzeju u Aranđelovcu.</string>
+    <string name="opis2Okuci">Ona je do danas sačuvana sa približno istim objektima koji su tu bili od njenog zasnivanja. Stara kuća, vajat, mlekar, magaza, nova kuća – sve su to objekti koji imaju spomenička svojstva, a čitav kompleks okućnice predstavlja značajan spomenik narodnog graditeljstva Šumadije XIX veka. Zbog konzervatorsko-restauratorskih radova Okućnica nije stalno otvorena za posetioce. U objektima se organizuju povremene etnografske izložbe, dečije radionice i drugi događaji.</string>
+    <string name="risovackaPecina">Risovačka pećina</string>
+    <string name="LokacijaPecine">Lokacija Pećine:</string>
+    <string name="orasacJaruga">Orašac Marićevića jaruga</string>
+    <string name="lokacijaOrasac">Lokacija Orašac, Marićevića jaruga:</string>
+    <string name="kucaMiloevic">"Okućnica Ilije Miloševića "</string>
+    <string name="lokacijaKuce">Lokacija okućnice Ilije Miloševića:</string>
+    <string name="no_network">Nema interneta</string>
+</resources>
