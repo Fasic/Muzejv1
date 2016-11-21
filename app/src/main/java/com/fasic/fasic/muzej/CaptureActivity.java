@@ -73,7 +73,7 @@ public class CaptureActivity extends Activity {
         initViews();
         setFont();
 
-        ImageView logo = (ImageView) findViewById(R.id.logo);
+        ImageView logo = (ImageView) findViewById(R.id.logoID);
         logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

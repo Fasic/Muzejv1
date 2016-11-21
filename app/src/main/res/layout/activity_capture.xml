@@ -16,17 +16,19 @@
         android:layout_alignParentEnd="true"
         android:gravity="center_horizontal" >
 
-        <ImageView
+        <ImageButton
             android:layout_width="@dimen/header_logo"
             android:layout_height="@dimen/header_logo"
             android:layout_centerInParent="true"
-            android:src="@drawable/logo"
+            android:src="@drawable/back"
             android:layout_marginTop="@dimen/header_logo_margine"
             android:layout_marginBottom="@dimen/header_logo_margine"
             android:layout_marginLeft="@dimen/header_logo_margine"
             android:layout_gravity="left|center"
             android:clickable="true"
-            android:id="@+id/logo" />
+            android:id="@+id/logoID"
+            android:scaleType="fitXY"
+            android:background="@drawable/back_dugme" />
 
         <FrameLayout
             android:layout_width="fill_parent"

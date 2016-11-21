@@ -9,7 +9,7 @@
     <dimen name="button_font">18.0dp</dimen>
 
     <dimen name="prikaz_naslov">24.0dp</dimen>
-    <dimen name="prikaz_txt">13.0dp</dimen>
+    <dimen name="prikaz_txt">16.0dp</dimen>
     <dimen name="prikaz_lr_margina">12.0dp</dimen>
     <dimen name="prikaz_tb_margina">6.0dp</dimen>
 
@@ -17,6 +17,8 @@
     <dimen name="qr_info_font">17dp</dimen>
     <dimen name="zastava_sirina">120dp</dimen>
     <dimen name="zastava_visina">72dp</dimen>
+    <dimen name="zastava_margina">6dp</dimen>
+    <dimen name="jezik">4dp</dimen>
 
     <dimen name="qrCRop">180dp</dimen>
 

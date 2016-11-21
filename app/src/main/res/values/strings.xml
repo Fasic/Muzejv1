@@ -7,7 +7,7 @@
     <string name="skeniranjeTxt">Skeniranje</string>
     <string name="title_activity_prikaz">Prikaz</string>
     <string name="backDugme">Back</string>
-    <string name="baseURL" translatable="false">http://192.168.1.114/</string>
+    <string name="baseURL" translatable="false">http://178.223.172.103</string>
     <string name="font" translatable="false">SanFranciscoReg.ttf</string>
     <string name="qrDugme">QR</string>
     <string name="infoDugme">info</string>

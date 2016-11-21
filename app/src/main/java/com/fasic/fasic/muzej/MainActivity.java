@@ -1,29 +1,38 @@
 package com.fasic.fasic.muzej;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Point;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import java.util.Locale;
 
 
 public class MainActivity extends Activity {
-    Button srb;
-    Button eng;
+    Button meni;
+    Button izabranaZasatava;
     LinearLayout qr;
     ImageView info;
     String jezik = "sr";
     public static final String PREFS_NAME = "Fasic";
+    Point point;
+    PopupWindow changeStatusPopUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +45,8 @@ public class MainActivity extends Activity {
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         jezik = settings.getString("jezik", "sr");
 
-        srb = (Button) findViewById(R.id.srbija);
-        eng = (Button) findViewById(R.id.engleska);
+        meni = (Button) findViewById(R.id.srbija);
+        izabranaZasatava = (Button) findViewById(R.id.engleska);
 
 
         qr =  (LinearLayout) findViewById(R.id.qr);
@@ -53,17 +62,27 @@ public class MainActivity extends Activity {
 
         setFont();
 
-        srb.setOnClickListener(new View.OnClickListener() {
+        meni.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                setSrb();
+                int[] location = new int[2];
+                meni.getLocationOnScreen(location);
+                Log.i("-->", "" + location[0] + " : " + location[1]);
+
+                //Initialize the Point with x, and y positions
+                point = new Point();
+                point.x = location[0];
+                point.y = location[1];
+                showStatusPopup(MainActivity.this, point);
+
             }
         });
 
-        eng.setOnClickListener(new View.OnClickListener() {
+        /*izabranaZasatava.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 setEng();
             }
-        });
+        });*/
 
         qr.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -96,6 +115,49 @@ public class MainActivity extends Activity {
         });
     }
 
+    private void showStatusPopup(final Activity context, Point p) {
+
+        // Inflate the popup_layout.xml
+        LinearLayout viewGroup = (LinearLayout) context.findViewById(R.id.llSortChangePopup);
+        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View layout = layoutInflater.inflate(R.layout.layoutpopup, null);
+        //layout.setAnimation(AnimationUtils.loadAnimation(context, R.anim.myanim));
+        //layout.setAnimation();
+        // Creating the PopupWindow
+        changeStatusPopUp = new PopupWindow(context);
+        changeStatusPopUp.setContentView(layout);
+        changeStatusPopUp.setWidth(LinearLayout.LayoutParams.WRAP_CONTENT);
+        changeStatusPopUp.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
+        changeStatusPopUp.setFocusable(true);
+        changeStatusPopUp.setAnimationStyle(R.style.Animation);
+        // Some offset to align the popup a bit to the left, and a bit down, relative to button's position.
+        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
+        int px1 = (int) context.getResources().getDimension(R.dimen.zastava_visina);
+        int px2 = (int) context.getResources().getDimension(R.dimen.zastava_margina);
+        int OFFSET_X = 0 - 5;
+        int OFFSET_Y = -px1 * 2 - 6 * px2;
+
+        //Clear the default translucent background
+        // changeStatusPopUp.setBackgroundDrawable(new BitmapDrawable());
+
+        // Displaying the popup at the specified location, + offsets.
+        changeStatusPopUp.showAtLocation(layout, Gravity.NO_GRAVITY, p.x + OFFSET_X, p.y + OFFSET_Y);
+    }
+
+    public void dugmeInMenu(View v){
+        if(v.getTag().equals("slika1")){
+            setSrb();
+        }else if(v.getTag().equals("slika2")){
+            setEng();
+        }else{
+            setRus();
+        }
+        if (changeStatusPopUp.isShowing()) {
+            changeStatusPopUp.dismiss();
+        }
+
+    }
+
     protected void onStop(){
         super.onStop();
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
@@ -105,17 +167,35 @@ public class MainActivity extends Activity {
     }
 
     private void setSrb(){
-        srb.setBackground(getResources().getDrawable(R.drawable.srboja));
-        eng.setBackground(getResources().getDrawable(R.drawable.enbezboje));
+        izabranaZasatava.setBackground(getResources().getDrawable(R.drawable.srboja));
+
+        String s = ">Izaberite jezik\n Choose language\n Выбрать язык";
+        meni.setText(s);
+        meni.setTextSize(getResources().getDimension(R.dimen.jezik));
 
         jezik = "sr";
         setJezik(jezik);
     }
 
     private void setEng(){
-        srb.setBackground(getResources().getDrawable(R.drawable.srbezboje));
-        eng.setBackground(getResources().getDrawable(R.drawable.enboja));
+        izabranaZasatava.setBackground(getResources().getDrawable(R.drawable.enboja));
+
+        String s = "Izaberite jezik\n >Choose language\n Выбрать язык";
+        meni.setText(s);
+        meni.setTextSize(getResources().getDimension(R.dimen.jezik));
+
         jezik = "en";
+        setJezik(jezik);
+    }
+
+    private void setRus(){
+        izabranaZasatava.setBackground(getResources().getDrawable(R.drawable.ruboja));
+
+        String s = "Izaberite jezik\n Choose language\n >Выбрать язык";
+        meni.setText(s);
+        meni.setTextSize(getResources().getDimension(R.dimen.jezik));
+
+        jezik = "ru";
         setJezik(jezik);
     }
 
@@ -136,8 +216,11 @@ public class MainActivity extends Activity {
         if(jezik.equals("sr")){
             drzava = "RS";
         }
-        else{
+        else if(jezik.equals("en")){
             drzava = "US";
+        }
+        else{
+            drzava = "RU";
         }
 
         locale = new Locale(jezik, drzava);

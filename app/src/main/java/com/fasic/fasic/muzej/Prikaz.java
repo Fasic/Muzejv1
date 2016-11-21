@@ -88,20 +88,15 @@ public class Prikaz extends Activity {
         String ver = "v" + BuildConfig.VERSION_CODE;
         String android_id = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
 
-        String url = baseURL  + ver + "/" + android_id  + "/" + jezik + "/" + id;
+        String url = baseURL  + "/api/" + ver + "/" + android_id  + "/" + jezik + "/" + id;
         //String url = "http://192.168.1.100/muzej/readTest.php";
         Log.i("--F>", url);
 
         try{
-        String sta = new GetJSON(url).execute().get();
-        if (sta == null) {
-            TextView naslovTV = (TextView) findViewById(R.id.naslovID);
-            naslovTV.setText(getResources().getString(R.string.no_network));
-
-        }
+        new GetJSON(url).execute();
     }catch (Exception e){}
 
-        ImageView logo = (ImageView) findViewById(R.id.logo);
+        ImageView logo = (ImageView) findViewById(R.id.logoID);
         logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -208,7 +203,7 @@ public class Prikaz extends Activity {
 
         @Override
         protected String doInBackground(String... params) {
-            for(int i=0;i<5;i++) {
+            for(int i=0;i<2;i++) {
 
                 try {
                     HttpURLConnection urlConnection = null;
@@ -216,8 +211,8 @@ public class Prikaz extends Activity {
                     URL url = new URL(this.url);
                     urlConnection = (HttpURLConnection) url.openConnection();
                     urlConnection.setRequestMethod("GET");
-                    urlConnection.setReadTimeout(10000 /* milliseconds */);
-                    urlConnection.setConnectTimeout(15000 /* milliseconds */);
+                    urlConnection.setReadTimeout(1000 /* milliseconds */);
+                    urlConnection.setConnectTimeout(1500 /* milliseconds */);
                     urlConnection.setDoOutput(true);
                     urlConnection.connect();
                     BufferedReader br=new BufferedReader(new InputStreamReader(url.openStream()));
@@ -239,6 +234,13 @@ public class Prikaz extends Activity {
                 }
             }
             Log.i("-->", "" + "doInBackgroundENDNull");
+            runOnUiThread(new Runnable() {
+                public void run() {
+                    TextView naslovTV = (TextView) findViewById(R.id.naslovID);
+                    naslovTV.setText(getResources().getString(R.string.no_network));
+                }
+            });
+
             return null;
         }
 

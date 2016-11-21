@@ -18,7 +18,8 @@
             android:id="@+id/srbija"
             android:layout_alignParentTop="true"
             android:layout_toStartOf="@+id/space2"
-            android:layout_marginRight="25dp" />
+            android:layout_marginRight="25dp"
+            android:background="@drawable/dugme"/>
 
         <Space
             android:layout_width="0dp"
@@ -127,7 +128,8 @@
                 android:layout_weight="0.65"
                 android:layout_width="150dp"
                 android:gravity="center"
-                android:textSize="@dimen/qr_info_font" />
+                android:textSize="@dimen/qr_info_font"
+                android:textColor="#720f10" />
         </LinearLayout>
 
     </RelativeLayout>
